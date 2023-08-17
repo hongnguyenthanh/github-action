@@ -17,7 +17,7 @@ jobs:
       - name: Build Docker Image
         run: |
           docker buildx create --use
-          docker buildx build --file Dockerfile --tag hongnguyenthanh/github-action:latest .
+          docker buildx build --file Dockerfile --tag hongnguyen1/github-action:latest .
 
       - name: Log in to Docker Hub
         run: echo ${{ secrets.DOCKER_HUB_PASSWORD }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
@@ -25,7 +25,7 @@ jobs:
       - name: Push Docker Image
         run: |
           docker buildx create --use
-          docker buildx build --file Dockerfile --tag hongnguyenthanh/github-action:latest --push .
+          docker buildx build --file Dockerfile --tag hongnguyen1/github-action:latest --push .
 
       - name: Configure AWS Credentials
         run: |
