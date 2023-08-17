@@ -1,4 +1,4 @@
-name: EKS App Deployment
+name: K8s App Deployment
 on:
   push:
     branches:
