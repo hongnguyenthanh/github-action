@@ -1,4 +1,4 @@
-name: Java App Deployment
+name: EKS App Deployment
 on:
   push:
     branches:
